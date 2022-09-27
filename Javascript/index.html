@@ -16,14 +16,46 @@
 
         <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
             <h1>BIENVENIDO</h1>
-            <h2>We are team of talented designers making websites with Bootstrap</h2>
-            <a href="../Javascript/src/login/login.html" class="btn-get-started">INICIO</a>
+            <!--h2>GOBIERNO AUTONOMO MUNICIPAL DE SACABA </h2-->
+            <img src="./src/styles/images/logo-sacaba.png">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" class="btn-get-started">INICIO</a>
         </div>
     </section>
 
-
     </div>
 
+
+    <div>
+
+        <div class="modal fade modalogi" id="loginModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+
+                <div class="modal-content mymodal">
+
+                    <div class="modal-header" style="height: 40px;">
+                        <img src="../Javascript/src/styles/images/logoSCB.png" width="40px" height="40px">
+                        <h5 class="model-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body modal-login">
+                        <form class="forms">
+                            <div class="mb-3 mb-4">
+                                <label for="" class="col-form-label">Usurio:</label>
+                                <input type="text" class="form-control" placeholder="Ingrese su usuario">
+                            </div>
+                            <div class="mb-3 mb-4">
+                                <label for="mesasage-text" class="col-form-label">Contraseña:</label>
+                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer" style="text-align:center ;">
+                        <button type="button" class="btn btn-primary btn-action">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
