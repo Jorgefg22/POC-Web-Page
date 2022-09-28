@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    background-image: url(../styles/images/plaza2.jpg);
+    height: 60px;
+}

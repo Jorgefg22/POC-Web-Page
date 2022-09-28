@@ -1,8 +1,8 @@
 {
-    "name": "POCs-webp-page",
+    "name": "POC-WEB-PAGE",
     "type": "module",
     "scripts": {
-        "start": "index.html",
+        "start": "node main.js",
         "arrayoperations": "node main.js",
         "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
     },
