@@ -39,28 +39,23 @@
                         <img src="../Javascript/src/styles/images/logoSCB.png" width="40px" height="40px">
                         <h5 class="model-title" id="exampleModalLabel">Iniciar Sesion</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close" onclick="controller.clean()"></button>
-                    </div>
-                    <!--div class="modal-body modal-login">
-                        <form class="forms">
-                            <div class="mb-3 mb-4">
-                                <label for="" class="col-form-label">Usurio:</label>
-                                <input type="text" class="form-control" placeholder="Ingrese su usuario">
-                            </div>
-                            <div class="mb-3 mb-4">
-                                <label for="mesasage-text" class="col-form-label">Contraseña:</label>
-                                <input type="password" class="form-control" placeholder="Ingrese su contraseña">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer" style="text-align:center ;">
-                        <button type="button" class="btn btn-primary btn-action">Aceptar</button>
-                    </div-->
+                    </div>  
 
-                    <form action="#">
-                        <input type="text"  id="user" class="usuario">
-                        <label for="" placeholder="Usuario" alt="Usuario"></label>
-                        <input type="password" id="pswd">
-                        <label for="" placeholder="Contraseña" alt="Contraseña" ></label>
+                        <div class="container" style="margin-top: 5%;">
+                            <form action="#" onclick="controller.restoreFields();">
+                                <input type="text" required id="user" onclick="controller.disableShowPSWD();">  
+                                <label for="" placeholder="Usuario" alt="Usuario" ></label>
+                                <div id="is-relative">
+                                    <input type="password" required id="pswd" class="input"  >       
+                                    <label for="" placeholder="Contraseña" alt="Contraseña" ></label>
+                                    <span id="icon" onclick="controller.showPassword    ();" >
+                                        <i class="fa-solid fa-eye " id="iconPswd"></i>
+                                      </span>
+                                </div>
+                               
+                               
+                              </form>
+                          </div>
 
                         <div class="warning-div" id="warningdiv" style="display:none;">
                             <i class="fa-sharp fa-solid fa-circle-exclamation warning-icon" ></i>
@@ -70,7 +65,7 @@
                       </form>
                       
                       <div class="modal-footer" style="text-align:center ;">
-                        <button type="button" class="btn btn-primary btn-action aceptar" id="aceptar" onclick="controller.clean();controller.verificationLogin();">Aceptar</button>
+                        <button type="button" class="btn btn-primary btn-action aceptar" id="aceptar" onclick="controller.verificationLogin();">Aceptar</button>
                     </div>  
             </div>
         </div>

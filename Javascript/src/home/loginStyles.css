@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    background-image: url(../styles/images/plaza2.jpg);
+    height: 60px;
+}
+
+
+
+/*style of the side var*/
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:aliceblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: aliceblue;
+    color:rgb(0, 0, 0);
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: rgb(209, 209, 211);
+    color: rgb(0, 0, 0);
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  /*special styles for sideber*/
+  i{
+    color:  #0c4cad;
+  }
+
+
+/*  styles of nav static*/
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    overflow:hidden;
+  }
+  header {
+  /*  background: rgba(0,0,0,0.9);*/
+  background-image: url(..//styles/images/plaza2.jpg);
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  nav {
+    float: left; /* Desplazamos el nav hacia la izquierda */
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #3ead47;
+  }
+  .contenido {
+    padding-top: 60px;
+  }
+  
