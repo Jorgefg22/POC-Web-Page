@@ -22,9 +22,8 @@ body {
     background-color:aliceblue;
     position: fixed;
     height: 100%;
-    overflow: auto;
-  }
-  
+    /*overflow: auto;*/
+  }  
   .sidebar a {
     display: block;
     color: black;
@@ -116,5 +115,9 @@ body {
   }
   .contenido {
     padding-top: 60px;
+  }
+  .options-extras{
+    padding: 7px;
+    font-size: 13px;
   }
   
