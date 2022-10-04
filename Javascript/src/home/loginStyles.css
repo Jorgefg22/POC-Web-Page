@@ -22,7 +22,7 @@ body {
     background-color:aliceblue;
     position: fixed;
     height: 100%;
-    /*overflow: auto;*/
+    overflow: auto;
   }  
   .sidebar a {
     display: block;
@@ -82,7 +82,7 @@ body {
   .wrapper {
     width: 100%;
     margin: auto;
-    overflow:hidden;
+    overflow:auto;
   }
   header {
   /*  background: rgba(0,0,0,0.9);*/
@@ -120,4 +120,5 @@ body {
     padding: 7px;
     font-size: 13px;
   }
+
   

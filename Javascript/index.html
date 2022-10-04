@@ -43,7 +43,7 @@
 
                         <div class="container" style="margin-top: 5%;">
                             <form action="#" onclick="controller.restoreFields();">
-                                <input type="text" required id="user" onclick="controller.disableShowPSWD();">  
+                                <input type="text" required id="user" onclick="controller.disableShowPSWD();" autocomplete="off">  
                                 <label for="" placeholder="Usuario" alt="Usuario" ></label>
                                 <div id="is-relative">
                                     <input type="password" required id="pswd" class="input"  >       
@@ -65,7 +65,7 @@
                       </form>
                       
                       <div class="modal-footer" style="text-align:center ;">
-                        <button type="button" class="btn btn-primary btn-action aceptar" id="aceptar" onclick="controller.verificationLogin();">Aceptar</button>
+                        <button type="submit" class="btn btn-primary btn-action aceptar" id="aceptar" onclick="controller.verificationLogin();">Aceptar</button>
                     </div>  
             </div>
         </div>
