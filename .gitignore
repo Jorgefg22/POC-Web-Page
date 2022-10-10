@@ -32,7 +32,7 @@ cmake-build-*/
 
 # File-based project format
 *.iws
-test
+
 # IntelliJ
 out/
 node_modules
